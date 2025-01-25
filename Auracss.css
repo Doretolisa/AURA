@@ -1,0 +1,89 @@
+body,header {
+    margin: 0;
+    padding: 0;
+}
+.stcabecalho1 {
+    position: sticky; /* faz ele ficar fixo no topo da pagina */
+    top: 0px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.stcabecalho2 {
+    position: static; 
+    margin: 0;
+    background-color: rgb(120, 120, 225);
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+.logostyle {
+    font-family: 'Hatton', sans-serif;
+    color: white;
+    font-size: 4rem;
+}
+
+.search-container { /*define largura do container input*/
+    position: relative;
+    top: 30px;
+    width: 300px; /* Tamanho do input */
+}
+
+.search-container input[type="text"] { /*define estilo do texto do input*/
+    width: 100%; /* Espaço para o ícone */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    border-color: white;
+    background-color: rgb(120, 120, 225);
+}
+
+.search-container .fa-search { /*define estilo do icone do input*/
+    position: absolute;
+    top: 18%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white;
+}
+
+input::placeholder {
+    color: white; /* Cor cinza escuro */
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #ffffff;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(120, 120, 225); /* Cor ao passar o mouse */
+  }
+.cabecalho3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.video-container { 
+    position: relative;
+    text-align: center;
+}
+.video {
+    border-radius: 10px;
+    margin-top: 15px;
+}
+/*Fontes usadas na pagina:*/
+@font-face{
+    font-family: 'Hatton';
+    src: url('fonts/Hatton-Medium.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat.ttf');
+}

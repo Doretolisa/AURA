@@ -1,6 +1,7 @@
-body,header {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .stcabecalho1 {
     position: sticky; /* faz ele ficar fixo no topo da pagina */
@@ -24,37 +25,33 @@ body,header {
     color: white;
     font-size: 4rem;
 }
-
-.search-container { /*define largura do container input*/
-    position: relative;
-    top: 30px;
-    width: 300px; /* Tamanho do input */
-}
-
-.search-container input[type="text"] { /*define estilo do texto do input*/
-    width: 100%; /* Espaço para o ícone */
-    font-size: 16px;
-    border: 2px solid #ccc;
+.search{
+    display:flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    background-color: #00000006;
+    width: 30%;
+    margin: 20px;
     border-radius: 20px;
-    border-color: white;
-    background-color: rgb(120, 120, 225);
+    padding: 5px 10px;
+    color: #ffffff;
 }
 
-.search-container .fa-search { /*define estilo do icone do input*/
-    position: absolute;
-    top: 18%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: white;
+#searchInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.card-container {
+    padding-inline: 3%;
 }
 
 input::placeholder {
     color: white; /* Cor cinza escuro */
-}
-
-.search-container input[type="text"]:focus {
-    border-color: #ffffff;
 }
 
 a {

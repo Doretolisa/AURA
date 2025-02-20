@@ -144,23 +144,25 @@ const data = [
 
 const filteredData = [...data]
 
-const cardContainer = document.querySelector(".card-container"); 
+const cardContainer = document.querySelector(".varios-produtos"); 
 const searchInput = document.querySelector("#searchInput");
 
 const displayData = data => {
-    cardContainer.innerHTML = "";  // Limpa os cards anteriores
-    data.forEach(e => {
-        cardContainer.innerHTML += `
-        <div class="card-body card">
-        <img class="card-img-top" src="${e.src}" alt="imagem do ${e.title}" >          
-        <h5 class="card-subtitle mb-2 text-muted">${e.title}</h5>
-                <p class="card-text">${e.descricao}</p>
-                <h5 class="card-title">${e.preco}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">${e.parcelamento}</h6>
-              </div>
-            </div>
-        `
-    })
+     cardContainer.innerHTML = "";  // Limpa os cards anteriores
+     data.forEach(e => {
+         cardContainer.innerHTML += `
+    <div class="card-produto">
+            <img src="${e.src}" alt="Imagem do ${e.title}" class="produto-imagem">
+            <h5 class="name">${e.title}</h5>
+            <p class="descricao">${e.descricao}</p>
+            <h5 class="preco">${e.preco}</h5>
+            <h6 class="parcelas-descricao">${e.parcelamento}</h6>
+            <div class="botoes">
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-adicionar"><i class="fa-solid fa-cart-shopping" style="color: #ffffff; position: inherit;"></i></button>
+            </div> 
+    </div>`
+         })
 }
 
 // Função de pesquisa
@@ -170,3 +172,12 @@ searchInput.addEventListener("keyup", (e) => {
 })
 
 window.addEventListener("load", displayData.bind(null,data))
+
+// <div class="card-body card">
+//          <img class="card-img-top" src="${e.src}" alt="imagem do ${e.title}" >          
+//          <h5 class="card-subtitle mb-2 text-muted">${e.title}</h5>
+//                  <p class="card-text">${e.descricao}</p>
+//                  <h5 class="card-title">${e.preco}</h5>
+//                  <h6 class="card-subtitle mb-2 text-muted">${e.parcelamento}</h6>
+//                </div>
+

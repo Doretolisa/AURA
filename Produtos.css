@@ -1,0 +1,119 @@
+/* Estilo para o container dos produtos */
+.varios-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adapta-se automaticamente com base no tamanho da tela */
+    gap: 20px; /* Espaço entre os produtos */
+    justify-content: flex-start; /* Centraliza os produtos */
+    padding: 20px;
+}
+
+/* Estilo do card de produto */
+.card-produto {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; /* Distribui o conteúdo de forma equilibrada */
+    height: 100%; /* Faz com que todos os cards tenham a mesma altura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo da imagem do produto */
+.produto-imagem {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Estilo do nome do produto */
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo da descrição do produto */
+.descricao {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: left; /* Centraliza a descrição */
+}
+
+/* Estilo do preço */
+.preco {
+    font-size: 1.5rem;
+    color: #E91E63;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo das parcelas */
+.parcelas-descricao {
+    font-size: 0.7rem;
+    color: #555;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+/* Estilo para os botões (Comprar e Adicionar ao Carrinho) */
+.botoes {
+    width: 90%;
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: auto; /* Garante que os botões fiquem na parte inferior */
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar {
+    width: 70%;
+    background-color: #E91E63; /* Cor de fundo para o botão de comprar */
+    color: white;
+}
+
+.btn-comprar:hover {
+    background-color: #c2185b; /* Cor do botão de comprar quando passar o mouse */
+}
+
+.btn-adicionar {
+    width: 35%;
+    background-color: #4CAF50; /* Cor de fundo para o botão de adicionar ao carrinho */
+    color: white;
+}
+
+.btn-adicionar:hover {
+    background-color: #388E3C; /* Cor do botão de adicionar ao carrinho quando passar o mouse */
+}
+
+/* Efeito de hover para destacar o card */
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o layout responsivo (em telas menores) */
+@media (max-width: 768px) {
+    .varios-produtos {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta os cards para telas menores */
+    }
+
+    .card-produto {
+        width: 100%; /* Garante que o card ocupe toda a largura possível */
+    }
+}

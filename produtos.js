@@ -49,7 +49,7 @@ const data = [
         parcelamento: "OU 10X DE R$ 5,49",
     },
     {
-        title: "Iluminador Líquido",
+        title: "Iluminador Liquido",
         src: "/Produtos/Iluminador liquido.png",
         descricao: "fórmula leve e cintilante, ideal para um brilho natural.",
         preco: "R$69,99",
@@ -63,7 +63,7 @@ const data = [
         parcelamento: "OU 10X DE R$ 8,99",
     },
     {
-        title: "Corretivo Líquido",
+        title: "Corretivo Liquido",
         src: "/Produtos/Corretivo liquido.png",
         descricao: "cobertura média a alta, ideal para olheiras e manchas.",
         preco: "R$39,99",

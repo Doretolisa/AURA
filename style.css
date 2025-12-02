@@ -1,6 +1,6 @@
-html, body {
+*{
     padding: 0;
-    overflow-x: hidden;
+    margin: 0;
 }
 
 .stcabecalho1 {
@@ -37,18 +37,6 @@ html, body {
     margin-left: 30px;
     margin-right: 30px;
 }
-
-video::-internal-media-controls {
-    display: none;
-}
-video::-webkit-media-controls {
-    display: none;
-}
-video {
-    pointer-events: none; 
-}
-
-
 .logostyle {
     font-family: 'Hatton', sans-serif;
     color: white;
@@ -91,7 +79,6 @@ video {
     font-size: 18px;
     color: white;
 }
-
 input::placeholder {
     color: white; /* Cor Branca*/
 }
@@ -101,13 +88,22 @@ input:focus {
 .search-container input[type="text"]:focus {
     border-color: #ffffff;
 }
-
 a {
     color: black;
 }
 a:hover {
     color: rgb(120, 120, 225); /* Cor ao passar o mouse */
-  }
+}
+
+video::-internal-media-controls {
+    display: none;
+}
+video::-webkit-media-controls {
+    display: none;
+}
+video {
+    pointer-events: none; 
+}
 
 .video-container { 
     text-align: center;
